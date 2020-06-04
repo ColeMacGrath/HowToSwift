@@ -13,3 +13,25 @@ How to create some basic API calls with native tools in Swift
 How to download images with string URL and assign directly to ImageView.
 
 If you're using storyboard set your UIImageView class to CacheImageView, then call loadImage, example of ussage in ViewController, image is loaded in viewDidLoad.
+
+## 3 - How to create some useful IBDesignables views
+
+How to create some creative and beautiful elements in storyboards such as CardViews, gradients, etc.
+
+## 4 - How to create a custom menu like share sheet
+
+How to create and simulate interface of share sheet for your own menus extending from UIActivityViewController
+
+## 5 - How to general utilities
+
+* How underline UITextField
+* How to remove extra lines when UITableView elements doesn't fit on screen
+* How to convert String to date
+* How check regex for mail in String
+* How to create QR with string
+* How to validate an URL
+* How to convert date to String
+* How to remove UINavigationBar line
+* How to crete and set an UIActivityIndicatorView on every view easily
+* How to check booleans from Int
+* How to call UIRefreshControl programatically 

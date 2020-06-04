@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fam-BF-YST">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gradient View-->
+        <scene sceneID="vgV-lg-JNK">
+            <objects>
+                <viewController id="evy-nX-khq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8o-4c-32i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXO-ac-rIs" customClass="GradientView" customModule="IBElements" customModuleProvider="target">
+                                <rect key="frame" x="28" y="358.5" width="358" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BXO-ac-rIs" secondAttribute="height" multiplier="2:1" id="kUU-Lt-Kaf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                        <color key="value" red="0.68422102929999995" green="0.4118391871" blue="0.9998797774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                        <color key="value" red="0.99662107229999997" green="0.50713676210000003" blue="0.88001096249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BXO-ac-rIs" firstAttribute="centerX" secondItem="f8o-4c-32i" secondAttribute="centerX" id="NtI-pN-JpX"/>
+                            <constraint firstItem="BXO-ac-rIs" firstAttribute="centerY" secondItem="f8o-4c-32i" secondAttribute="centerY" id="TWm-5U-7Os"/>
+                            <constraint firstItem="BXO-ac-rIs" firstAttribute="height" secondItem="f8o-4c-32i" secondAttribute="height" multiplier="0.2" id="Zl7-aT-v9p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EyU-gK-wrm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gradient View" id="zdu-5u-rK4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhh-qB-ejh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="-662"/>
+        </scene>
+        <!--Card View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBElements" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onc-jT-kqu" customClass="CardView" customModule="IBElements" customModuleProvider="target">
+                                <rect key="frame" x="28" y="358.5" width="358" height="179"/>
+                                <color key="backgroundColor" red="0.94558578729999998" green="0.5648604035" blue="0.45194208619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="onc-jT-kqu" secondAttribute="height" multiplier="2:1" id="YPf-WF-DKs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="onc-jT-kqu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B61-In-tr2"/>
+                            <constraint firstItem="onc-jT-kqu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FA2-P6-oX5"/>
+                            <constraint firstItem="onc-jT-kqu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="bmT-iy-aLe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Card View" id="XIQ-SU-nfL"/>
+                    <navigationItem key="navigationItem" id="RPc-ea-Vgo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="80"/>
+        </scene>
+        <!--Card Image-->
+        <scene sceneID="aex-na-2O7">
+            <objects>
+                <viewController id="dGg-O9-6ff" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BY2-3V-U1g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunset" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-jD-LRg" customClass="CardImage" customModule="IBElements" customModuleProvider="target">
+                                <rect key="frame" x="28" y="358.5" width="358" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ksS-jD-LRg" secondAttribute="height" multiplier="2:1" id="JCE-lg-MO1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ksS-jD-LRg" firstAttribute="centerY" secondItem="BY2-3V-U1g" secondAttribute="centerY" id="Gw6-P0-pOH"/>
+                            <constraint firstItem="ksS-jD-LRg" firstAttribute="centerX" secondItem="BY2-3V-U1g" secondAttribute="centerX" id="t79-0x-ruC"/>
+                            <constraint firstItem="ksS-jD-LRg" firstAttribute="height" secondItem="BY2-3V-U1g" secondAttribute="height" multiplier="0.2" id="yrx-C1-5Og"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TUQ-Gv-4bR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Card Image" id="x3h-OX-xyy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ai9-rZ-2RS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="813"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ABl-xE-RiL">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fam-BF-YST" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1QD-Dt-Am3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Am9-Fe-dp6"/>
+                        <segue destination="dGg-O9-6ff" kind="relationship" relationship="viewControllers" id="Mzn-nz-ICg"/>
+                        <segue destination="evy-nX-khq" kind="relationship" relationship="viewControllers" id="BqZ-IM-ijb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5K-Zy-DzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sunset" width="640" height="247.33332824707031"/>
+    </resources>
+</document>
