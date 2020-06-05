@@ -29,7 +29,6 @@ How to create and simulate interface of share sheet for your own menus extending
 * How to convert String to date
 * How check regex for mail in String
 * How to create QR with string
-* How to validate an URL
 * How to convert date to String
 * How to remove UINavigationBar line
 * How to crete and set an UIActivityIndicatorView on every view easily
