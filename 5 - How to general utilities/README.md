@@ -176,4 +176,26 @@ if let ciImage = qrText.qrImage(using: .darkGray) {
 }
 ```
 
-## 
+## Custom layout size for CollectionView
+
+* Select Collection View Flow Layout and set Estimated Size to None in Interface Builder
+
+```swift
+//Add UICollectionViewDelegateFlowLayout to your class
+func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+  let height = view.frame.size.height
+  let width = view.safeAreaLayoutGuide.layoutFrame.size.width
+  
+  let device = UIDevice.current
+  
+  if device.userInterfaceIdiom == .phone { //If device is an iPhone
+    if device.orientation.isLandscape { //If device is Landscaoe
+      return CGSize(width: width * 0.45, height: height * 0.4)
+    }
+    return CGSize(width: width * 0.95, height: height * 0.3)
+  }
+  return CGSize(width: width * 0.48, height: height * 0.35) //If device is iPad
+}
+```
+
+### 
