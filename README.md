@@ -33,4 +33,5 @@ How to create and simulate interface of share sheet for your own menus extending
 * How to remove UINavigationBar line
 * How to crete and set an UIActivityIndicatorView on every view easily
 * How to check booleans from Int
-* How to call UIRefreshControl programatically 
+* How to call UIRefreshControl programatically
+* How to add support for iOS 12 in Xcode 11 projects
