@@ -4,6 +4,8 @@
 
 How to swift includes some basics examples to do some recurrent and basics tasks in mobile apps. Keep in mind are basic examples, you can expand, modify or do what you want for specfics tasks.
 
+## Some themes includes in Wiki (check it for more)
+
 ## 1 - How to call an API
 
 How to create some basic API calls with native tools in Swift
